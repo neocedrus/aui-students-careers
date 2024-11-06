@@ -43,7 +43,7 @@ Follow these steps to set up the project locally:
    git clone https://github.com/your-username/aui-student-careers.git
    cd aui-student-careers
 
-2. Open vsCode:
+2. Open CMD at your decised path:
    ```bash
    git clone https://github.com/your-username/aui-student-careers.git
    cd aui-student-careers
