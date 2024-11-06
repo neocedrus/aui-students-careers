@@ -54,11 +54,11 @@ export default function Component() {
           </div>
           
           <div className="relative hidden lg:block">
-            <div className="aspect-square overflow-hidden rounded-full border">
+            <div className="aspect-square overflow-hidden rounded-full border ml-10">
               <img
-                src="/placeholder.svg?height=600&width=600"
+                src="src/assets/DSCF0193.webp"
                 alt="Professional camera equipment"
-                className="h-full w-full object-cover"
+                className="h-full w-full "
               />
             </div>
             <div className="absolute inset-0">

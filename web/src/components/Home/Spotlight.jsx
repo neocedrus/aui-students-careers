@@ -1,24 +1,28 @@
 export default function JobCategoriesSpotlight() {
     const categories = [
       {
-        title: "Google Cloud Roles",
-        image: "/placeholder.svg?height=200&width=400",
-        description: "Help millions build what's next for their business — explore engineering jobs with Google Cloud.",
+        title: 'Peer Mentoring',
+        image: '/src/assets/photo_5972197728291241188_y-1024x768.jpg',
+        description:
+          'Support freshmen students by providing guidance, sharing resources, and offering advice to help them succeed academically and personally.',
       },
       {
-        title: "Google AI and ML Roles",
-        image: "/placeholder.svg?height=200&width=400",
-        description: "Search some of our newest, priority roles in artificial intelligence and machine learning.",
+        title: 'neoCedrus Software Developer',
+        image: '/src/assets/86.webp',
+        description:
+          'Contribute to innovative projects by developing software solutions, collaborating with team members, and enhancing user experiences.',
       },
       {
-        title: "Consumer Hardware",
-        image: "/placeholder.svg?height=200&width=400",
-        description: "Design and build the systems that are the heart of the world's largest and most powerful computing infrastructure and products.",
+        title: 'SAO Leader',
+        image: '/src/assets/DSCF0551-1.webp',
+        description:
+          'Lead and engage in various student activities, fostering a vibrant campus culture and encouraging student involvement.',
       },
       {
-        title: "Google Workspace",
-        image: "/placeholder.svg?height=200&width=400",
-        description: "Build collaborative tools that empower people and organizations to do their best work together.",
+        title: 'Teacher Assistant',
+        image: '/src/assets/liberal-arts-img03.webp',
+        description:
+          'Assist faculty members with course-related tasks, help students understand course material, and provide additional academic support.',
       },
     ];
   

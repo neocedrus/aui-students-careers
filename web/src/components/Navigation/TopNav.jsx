@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const SideNave = () => {
+const SideNav = () => {
   return (
-    <div></div>
-  )
+    <div className='flex border h-24 gap-10 items-center jutify-center'>
+      <img src="/public/AUICONNECT.png" alt="NeoCode Logo" className='w-52' />
+      <Link to="/" style={{ display: 'block', margin: '10px 0', textDecoration: 'none' }}>Home</Link>
+      <Link to="/MyApplications" style={{ display: 'block', margin: '10px 0', textDecoration: 'none' }}>My Applications</Link>
+      <Link to="/JobPostings" style={{ display: 'block', margin: '10px 0', textDecoration: 'none' }}>Job Postings</Link>
+      <Link to="/Account" style={{ display: 'block', margin: '10px 0', textDecoration: 'none' }}>My Account</Link>
+    </div>
+  );
 }
 
-export default SideNave;
+export default SideNav;
