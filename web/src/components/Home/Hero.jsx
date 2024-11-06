@@ -13,7 +13,7 @@ export default function Component() {
                 for everyone
               </h1>
               <p className="text-xl text-muted-foreground">
-                Find your next job at AUI Careers.
+                Find your next job at AUI Connect.
               </p>
             </div>
             

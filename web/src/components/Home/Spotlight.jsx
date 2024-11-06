@@ -29,7 +29,7 @@ export default function JobCategoriesSpotlight() {
     return (
       <section className="w-full py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">SPOTLIGHT</h2>
+          <h2 className="text-3xl font-bold text-center text-green-700 mb-10">SPOTLIGHT</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {categories.map((category, index) => (
               <div

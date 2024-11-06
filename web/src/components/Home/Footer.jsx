@@ -14,7 +14,7 @@ export default function Footer(){
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            {['About Us', 'Job Listings', 'For Universities', 'Contact'].map((link, index) => (
+            {['Home', 'Job Listings', 'My Applications', 'My Profile'].map((link, index) => (
               <li key={index} className="text-gray-400 hover:text-white cursor-pointer">
                 {link}
               </li>

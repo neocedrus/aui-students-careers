@@ -51,7 +51,7 @@ export default function Component() {
                 key={team.title}
                 className='group space-y-2 hover:text-blue-600'
               >
-                <h4 className='text-lg font-semibold text-blue-600'>
+                <h4 className='text-lg font-semibold text-green-700'>
                   {team.title}
                 </h4>
                 <p className='text-sm text-muted-foreground group-hover:text-muted-foreground/80'>
