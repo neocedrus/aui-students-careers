@@ -48,7 +48,7 @@ function MyApplications() {
 
   return (
     <div>
-      <div className="text-4xl text-center">MyApplications</div>
+      <div className="text-4xl text-center">My Applications</div>
     </div>
   );
 }
