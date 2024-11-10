@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-
-const jobs = [
-  { id: 1, title: 'Software Engineer', description: 'Develop and maintain software applications.' },
-  { id: 2, title: 'Data Scientist', description: 'Analyze data to gain insights and build predictive models.' },
-  { id: 3, title: 'Product Manager', description: 'Oversee product development and manage product lifecycle.' },
-];
+import jobs from '../data/jobsData';
 
 function JobPostings() {
   const [selectedJob, setSelectedJob] = useState(null);
@@ -33,8 +28,27 @@ function JobPostings() {
         <div className='col-span-3 p-4'>
           {selectedJob ? (
             <div>
-              <h2 className='text-2xl font-bold'>{selectedJob.title}</h2>
-              <p className='mt-2'>{selectedJob.description}</p>
+              <div>
+                <h1 className='text-2xl font-bold'>{selectedJob.title}</h1>
+                <button type="button">Apply</button>
+              </div>
+              <div>
+                {selectedJob.salary && <p><span>Salary: </span>{selectedJob.salary}</p>}
+                {selectedJob.department && <p><span>Department: </span>{selectedJob.department}</p>}
+                {selectedJob.applicationDeadline && <p><span>Application Deadline: </span>{selectedJob.applicationDeadline}</p>}
+                {selectedJob.description && (
+                  <>
+                    <h3>Description</h3>
+                    <p className='mt-2' style={{ whiteSpace: 'pre-line' }}>{selectedJob.description}</p>
+                  </>
+                )}
+                {selectedJob.requirements && (
+                  <>
+                    <h3>Requirements</h3>
+                    <p className='mt-2' style={{ whiteSpace: 'pre-line' }}>{selectedJob.requirements}</p>
+                  </>
+                )}
+              </div>
             </div>
           ) : (
             <p>Select a job to see the details.</p>
