@@ -27,3 +27,9 @@ What does this PR address?
 # 🔍 Summary of Work Done:
 
 - Key tasks accomplished in bullet points
+
+---
+
+# 📸 Screenshots:
+
+If applicable, please provide screenshots to help illustrate the changes:r
