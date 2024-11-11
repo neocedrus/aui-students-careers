@@ -55,27 +55,35 @@ function MyApplications() {
         <table className="mx-auto table-fixed border-separate border-spacing-0 w-[80%]">
           <thead>
             <tr className="text-black width-96">
-              <th className="border border-gray-300 px-4 py-2 rounded-l-full">
+              <th className="border border-gray-300 px-4 py-2 rounded-tl-full">
                 Role
               </th>
               <th className="border border-gray-300 px-4 py-2">Department</th>
               <th className="border border-gray-300 px-4 py-2">
                 Date of Application
               </th>
-              <th className="border border-gray-300 px-4 py-2 rounded-r-full">
+              <th className="border border-gray-300 px-4 py-2 rounded-tr-full">
                 Status
               </th>
             </tr>
           </thead>
-          <tbody>
-              {applications.map((application) => {
+          <tbody className="text-center p-6">
+            {applications.map((application) => {
+              return (
                 <tr>
                   <td className="border border-gray-300">{application.role}</td>
-                  <td className="border border-gray-300">{application.department}</td>
-                  <td className="border border-gray-300">{application.dateOfApplication}</td>
-                  <td className="border border-gray-300">{application.status}</td>
+                  <td className="border border-gray-300">
+                    {application.department}
+                  </td>
+                  <td className="border border-gray-300">
+                    {application.dateOfApplication}
+                  </td>
+                  <td className="border border-gray-300">
+                    {application.status}
+                  </td>
                 </tr>
-                })}
+              );
+            })}
           </tbody>
         </table>
       </div>
