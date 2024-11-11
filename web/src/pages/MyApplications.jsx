@@ -48,7 +48,17 @@ function MyApplications() {
 
   return (
     <div>
-      <div className="text-4xl text-center">My Applications</div>
+      <div style={{ color: "black", textAlign: "center" }}>My Applications</div>
+      <div>
+        <table border="1">
+          <tr>
+            <th>Role</th>
+            <th>Department</th>
+            <th>Date of Application</th>
+            <th>Status</th>
+          </tr>
+        </table>
+      </div>
     </div>
   );
 }

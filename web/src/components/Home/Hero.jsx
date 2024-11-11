@@ -46,7 +46,7 @@ export default function Component() {
                 </div>
               </div>
 
-              <button size="xl" className=" bg-[#34A853] mt-7 p-4 rounded-full">
+              <button size="xl" className=" bg-[#34A853] text-white mt-7 p-4 rounded-full">
                 Search
               </button>
 
