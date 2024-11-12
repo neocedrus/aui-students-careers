@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const SideNav = () => {
   return (
-    <div className='flex border h-[15vh] gap-10 items-center jutify-center'>
+    <div className='flex border h-[15vh] gap-10 items-center jutify-center font-primary'>
       <img src="/AUICONNECT.png" alt="NeoCode Logo" className='w-52' />
       <Link to="/" style={{ display: 'block', margin: '10px 0', textDecoration: 'none' }}>Home</Link>
       <Link to="/MyApplications" style={{ display: 'block', margin: '10px 0', textDecoration: 'none' }}>My Applications</Link>
