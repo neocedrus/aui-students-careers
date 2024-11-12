@@ -2,7 +2,7 @@ import { Search, MapPin } from "lucide-react"
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-white p-4 md:p-6 lg:p-8">
+    <div className="min-h-screen font-primary bg-white p-4 md:p-6 lg:p-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="space-y-6">
@@ -16,7 +16,7 @@ export default function Component() {
                 Find your next job at AUI Connect.
               </p>
             </div>
-            
+
             <div className="flex items-center gap-4">
               <div className="space-y-2">
                 <label htmlFor="role" className="text-sm font-medium">
@@ -31,7 +31,7 @@ export default function Component() {
                   />
                 </div>
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="location" className="text-sm font-medium">
                   Where?
@@ -46,13 +46,13 @@ export default function Component() {
                 </div>
               </div>
 
-              <button size="xl" className=" bg-[#34A853] mt-7 p-4 rounded-full">
+              <button size="xl" className=" text-white font-primary  bg-[#34A853] mt-7 p-4 rounded-full">
                 Search
               </button>
 
             </div>
           </div>
-          
+
           <div className="relative hidden lg:block">
             <div className="aspect-square overflow-hidden rounded-full border ml-10">
               <img
