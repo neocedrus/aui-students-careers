@@ -2,7 +2,11 @@ import React from 'react'
 
 function MyAccount() {
   return (
-    <div>MyAccount</div>
+
+    <div>
+      <div>MyAccount</div>
+      <div> hello</div>
+    </div>
   )
 }
 
