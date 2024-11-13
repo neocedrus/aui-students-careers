@@ -5,6 +5,7 @@ import HomePage from './pages/Home';
 import MyApplications from './pages/MyApplications';
 import JobPostings from './pages/JobPostings';
 import MyAccount from './pages/MyAccount';
+import './App.css';
 
 export default function App() {
   return (
