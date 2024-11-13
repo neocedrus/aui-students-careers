@@ -6,6 +6,9 @@ function MyAccount() {
     <div>
       <div>MyAccount</div>
       <div> hello</div>
+      <div> hello</div>
+      <div> hello</div>
+      <div> hello</div>
     </div>
   )
 }
