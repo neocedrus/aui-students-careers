@@ -37,7 +37,7 @@ function JobPostings() {
               <p className='mt-2'>{selectedJob.description}</p>
             </div>
           ) : (
-            <p>Select a job to see the details.</p>
+            <p>Select job to see the details.</p>
           )}
         </div>
       </div>
