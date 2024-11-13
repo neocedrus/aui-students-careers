@@ -1,74 +1,29 @@
-import { Search, MapPin } from "lucide-react"
+import { Search, MapPin } from "lucide-react";
+import { Button } from "../ui/button";
+// import HeroImage from "@/assets/HeroImage.svg"
 
 export default function Component() {
   return (
-    <div className="min-h-screen font-primary bg-white p-4 md:p-6 lg:p-8">
-      <div className="mx-auto max-w-7xl">
-        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">
-                <span className="text-[#34A853]">Create</span>
-                <br />
-                for everyone
-              </h1>
-              <p className="text-xl text-muted-foreground">
-                Find your next job at AUI Connect.
-              </p>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <div className="space-y-2">
-                <label htmlFor="role" className="text-sm font-medium">
-                  Role
-                </label>
-                <div className="relative flex items-center border rounded-xl p-4">
-                  <Search className="absolute left-3 h-5 w-5 text-muted-foreground" />
-                  <input
-                    id="role"
-                    placeholder="Software engineer"
-                    className="pl-10"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="location" className="text-sm font-medium">
-                  Where?
-                </label>
-                <div className="relative  flex items-center border rounded-xl p-4">
-                  <MapPin className="absolute left-3 h-5 w-5 text-muted-foreground" />
-                  <input
-                    id="location"
-                    placeholder="Los Angeles"
-                    className="pl-10"
-                  />
-                </div>
-              </div>
-
-              <button size="xl" className=" text-white font-primary  bg-[#34A853] mt-7 p-4 rounded-full">
-                Search
-              </button>
-
-            </div>
-          </div>
-
-          <div className="relative hidden lg:block">
-            <div className="aspect-square overflow-hidden rounded-full border ml-10">
-              <img
-                src="src/assets/DSCF0193.webp"
-                alt="Professional camera equipment"
-                className="h-full w-full "
-              />
-            </div>
-            <div className="absolute inset-0">
-              <div className="absolute top-4 right-8 h-4 w-4 rounded-full border-2 border-[#4285F4]" />
-              <div className="absolute bottom-12 right-4 h-6 w-6 rounded-full border-2 border-[#FBBC05]" />
-              <div className="absolute top-1/2 -left-2 h-8 w-8 rounded-full border-2 border-[#34A853]" />
-            </div>
-          </div>
+    <div className="h-[100vh] flex flex-row items-center font-primary ">
+      <div className="w-[35%] pl-12 h-full flex flex-col mt-[15%] space-y-6">
+        <h1 className="text-7xl text-left font-semibold">
+          AUI Students
+          <br />
+          <span className="text-slate-400">Careers</span>
+        </h1>
+        <p className="pl-2 text-slate-700">
+          Your All-in-One students part-time application portal. 
+          Discover opportunities around your campus, and get the chance to leave a fingerprint at AUI
+        </p>
+        <div>
+          <button className="bg-slate-400 px-6 py-2 rounded-xl text-white">
+            Get Started Now
+          </button>
         </div>
       </div>
+      <div className="h-full">
+        <img src="/src/assets/messi.svg" className="absolute bottom-20" />
+      </div>
     </div>
-  )
+  );
 }
