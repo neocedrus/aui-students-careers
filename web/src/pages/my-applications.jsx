@@ -1,45 +1,8 @@
 import React from 'react';
 import { Building, Calendar, Clock } from 'lucide-react';
+import applicationsData from '@/data/applications-data';
 
 function MyApplications() {
-  const applications = [
-    {
-      role: 'Peer Mentor',
-      department: 'CLE',
-      dateOfApplication: '2024-10-12',
-      status: 'Pending',
-    },
-    {
-      role: 'Peer Tutor',
-      department: 'CLE',
-      dateOfApplication: '2024-10-15',
-      status: 'Accepted',
-    },
-    {
-      role: 'CLE Admin',
-      department: 'CLE',
-      dateOfApplication: '2024-10-18',
-      status: 'Rejected',
-    },
-    {
-      role: 'SAO Leader',
-      department: 'SAO',
-      dateOfApplication: '2024-10-20',
-      status: 'Pending',
-    },
-    {
-      role: 'SAO Admin',
-      department: 'SAO',
-      dateOfApplication: '2024-10-22',
-      status: 'Accepted',
-    },
-    {
-      role: 'Software Developer',
-      department: 'neoCedrus',
-      dateOfApplication: '2024-11-01',
-      status: 'Pending',
-    }
-  ];
 
   const StatusBadge = ({ status }) => {
     const statusStyles = {
@@ -65,7 +28,7 @@ function MyApplications() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 bg-gray-50">
-      {applications.map((application) => (
+      {applicationsData.map((application) => (
         <div 
           key={`${application.role}-${application.dateOfApplication}`}
           className="bg-white rounded-2xl p-6 

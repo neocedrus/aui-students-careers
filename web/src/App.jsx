@@ -1,20 +1,21 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import TopNav from './components/Navigation/TopNav';
-import HomePage from './pages/Home';
-import MyApplications from './pages/MyApplications';
-import JobPostings from './pages/JobPostings';
-import MyAccount from './pages/MyAccount';
+import HomePage from './pages/home';
+import MyApplications from './pages/my-applications';
+import JobPostings from './pages/job-posting';
+import MyAccount from './pages/my-account';
 
 export default function App() {
   return (
     <div className="h-screen w-full flex">
       <div className="flex-grow ">
+        <TopNav />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/MyApplications" element={<MyApplications />} />
-          <Route path="/JobPostings" element={<JobPostings />} />
-          <Route path="/Account" element={<MyAccount />} />
+          <Route path="/my-applications" element={<MyApplications />} />
+          <Route path="/job-postings" element={<JobPostings />} />
+          <Route path="/my/account" element={<MyAccount />} />
         </Routes>
       </div>
     </div>
