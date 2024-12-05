@@ -7,7 +7,6 @@ export default function Footer(){
           <div className='flex items-center gap-4'>
             <img src="src/assets/AUI.jpeg" alt="NeoCode Logo" width={120} height={40} className='rounded-xl'/>
             <img src="src/assets/neocedrus.png" alt="NeoCode Logo" width={120} height={40} className='rounded-xl'/>
-            <img src="src/assets/IEEE.jpeg" alt="NeoCode Logo" width={120} height={40} className='rounded-xl'/>
           </div>
           <p className="text-gray-400 mt-4">Connecting students with campus opportunities.</p>
         </div>

@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from '@/components/Home/hero'
-import Spotlight from '@/components/Home/Spotlight'
-import Departments from '@/components/Home/Departments'
-import Footer from '@/components/Home/Footer'
+import Hero from '@/components/home/hero'
+import Spotlight from '@/components/home/Spotlight'
+import Departments from '@/components/home/Departments'
+import Footer from '@/components/home/Footer'
 
 
 const HomePage = () => {

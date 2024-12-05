@@ -1,24 +1,6 @@
+import teamsData from "@/data/teams-data";
+
 export default function Component() {
- const teams = [
-   {
-     title: 'CLE (Center for Learning Excellence)',
-     description:
-       'Provide academic support through tutoring and mentoring programs to help students excel.',
-     href: '#',
-   },
-   {
-     title: 'SAO (Student Activities Office)',
-     description:
-       'Organize and lead student engagement initiatives, promoting an active campus community.',
-     href: '#',
-   },
-   {
-     title: 'neoCedrus',
-     description:
-       'Innovate and develop software solutions that empower users and enhance digital experiences.',
-     href: '#',
-   },
- ];
   return (
     <section className='container mx-auto px-4 py-12 md:py-16 lg:py-24'>
       <div className='grid gap-8 lg:grid-cols-2 lg:gap-12 items-start'>
@@ -46,7 +28,7 @@ export default function Component() {
             </p>
           </div>
           <div className='grid gap-6 sm:grid-cols-2'>
-            {teams.map(team => (
+            {teamsData.map(team => (
               <div
                 key={team.title}
                 className='group space-y-2 hover:text-blue-600'
@@ -60,7 +42,7 @@ export default function Component() {
               </div>
             ))}
           </div>
-          
+
         </div>
       </div>
     </section>
